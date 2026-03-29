@@ -5,7 +5,7 @@ import { checkPermissions } from "../middlewares/checkPermissions.js"
 const router = express.Router()
 
 // Get - get all users
-router.get("/", authMiddleware, getUsers)
+router.get("/", getUsers)
 
 // Get - get singular user
 router.get("/:id", authMiddleware, getUserById)
