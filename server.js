@@ -14,7 +14,7 @@ app.use("/auth", authRoute)
 app.use("/users", usersRoute)
 app.use("/movies", moviesRoute)
 
-app.use("/", (res) => {
+app.use("/", (_, res) => {
     res.send("fallback..404 - not found")
 })
 
