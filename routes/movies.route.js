@@ -1,6 +1,6 @@
 import express from "express"
 import { createMovie, deleteMovieById, getMovies, getMoviesByUser } from "../controllers/movies.controller.js"
-import { authMiddleware } from "../middlewares/authMIddleware.js"
+import { authMiddleware } from "../middlewares/authMiddleware.js"
 const router = express.Router()
 
 router.get("/", getMovies)
